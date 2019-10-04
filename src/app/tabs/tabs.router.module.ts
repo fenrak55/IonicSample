@@ -13,14 +13,11 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: '../tab1/tab1.module#Tab1PageModule'
+            loadChildren: '../tab1/tab1.module#Tab1PageModule',
           },
-          { 
-            path: 'artist-detail', loadChildren: '../tabs/artist-detail/artist-detail.module#ArtistDetailPageModule' 
-          }
+
         ]
       }
-      
       ,
       {
         path: 'tab2',
@@ -60,4 +57,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class TabsPageRoutingModule {}
+export class TabsPageRoutingModule { }

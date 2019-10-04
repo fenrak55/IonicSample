@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
-  { path: 'artist-detail', loadChildren: './tabs/artist-detail/artist-detail.module#ArtistDetailPageModule' }
+  {
+    path: '',
+    loadChildren: './tabs/tabs.module#TabsPageModule'
+  }
 ];
 @NgModule({
   imports: [
@@ -11,4 +13,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
